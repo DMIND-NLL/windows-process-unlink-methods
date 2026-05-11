@@ -3,26 +3,16 @@
 
 ## 项目结构
 windows-process-unlink-methods/
-
-├── README.md
-
-├── WscriptShell.cpp
-
-├── WMIExec.cpp
-
-├── IHxInteractiveUser.cpp
-
-├── IHxHelpPaneServer.cpp
-
-├── MMC_Exec_Admin.cpp
-
-├── MMC_Exec_NoAdmin.cpp
-
-├── ParentSpoof_CreateProcess.cpp
-
-├── ParentSpoof_NtCreateUserProcess.cpp
-
-├── SimulateKeyInput.cpp
+- [README.md](README.md)
+- [WscriptShell.cpp](WscriptShell.cpp)
+- [WMIExec.cpp](WMIExec.cpp)
+- [IHxInteractiveUser.cpp](IHxInteractiveUser.cpp)
+- [IHxHelpPaneServer.cpp](IHxHelpPaneServer.cpp)
+- [MMC_Exec_Admin.cpp](MMC_Exec_Admin.cpp)
+- [MMC_Exec_NoAdmin.cpp](MMC_Exec_NoAdmin.cpp)
+- [ParentSpoof_CreateProcess.cpp](ParentSpoof_CreateProcess.cpp)
+- [ParentSpoof_NtCreateUserProcess.cpp](ParentSpoof_NtCreateUserProcess.cpp)
+- [SimulateKeyInput.cpp](SimulateKeyInput.cpp)
 
 
 ## 各文件对应方法说明
@@ -87,3 +77,11 @@ $com.Document.ActiveView.ExecuteShellCommand('cmd.exe',"C:\\","/c calc.exe","Min
 2. 注意事项：
    - 部分技术在 Windows 11 上行为有变化
    - 实际使用时建议配合**进程注入**、**DLL 加载**等进一步隐藏
+  
+## 项目声明
+本项目的作者及单位
+```
+项目名称：windows-process-unlink-methods
+项目作者：Hong Deng, Zhiquan Liu
+作者单位：暨南大学网络空间安全学院
+```
