@@ -32,7 +32,8 @@ windows-process-unlink-methods/
 
 ### 0x01、通过Wscript.Shell创建进程（WscriptShell.cpp）
 `Wscript.Shell` 是 Windows 脚本宿主*提供的一个常用 COM 对象
-<img width="714" height="850" alt="image" src="https://github.com/user-attachments/assets/3b7e93ca-9a83-4654-a349-f00b756d64b9" />
+
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/3b7e93ca-9a83-4654-a349-f00b756d64b9" />
 
 ### 0x02、通过 WMI 创建进程（WMIExec.cpp）
 WMI 是 Windows 提供的 统一系统管理接口，允许脚本和程序查询/管理操作系统资源。
@@ -40,8 +41,9 @@ WMI 是 Windows 提供的 统一系统管理接口，允许脚本和程序查询
 ### 0x03、通过IHxInteractiveUser创建进程（IHxInteractiveUser.cpp）
 接口是`IHxInteractiveUser`，`CLSID`为`8CEC58E7-07A1-11D9-B15E-000D56BFE6EE`，`IID`为`8CEC595B-07A1-11D9-B15E-000D56BFE6EE`
 可见打开的Notepad.exe，显示找不到其父进程：
-<img width="798" height="960" alt="image" src="https://github.com/user-attachments/assets/75938c30-987e-4a9d-9c03-dc03d40041e0" />
-<img width="1059" height="118" alt="image" src="https://github.com/user-attachments/assets/6cd53415-0310-480e-af1d-788f40cd5a8c" />
+
+<img width="50%"  alt="image" src="https://github.com/user-attachments/assets/75938c30-987e-4a9d-9c03-dc03d40041e0" />
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/6cd53415-0310-480e-af1d-788f40cd5a8c" />
 
 ### 0x04、通过IHxHelpPaneServer创建进程（IHxHelpPaneServer.cpp）
 接口是`IHxHelpPaneServer`，`CLSID`为`8CEC58AE-07A1-11D9-B15E-000D56BFE6EE`，`IID`为`8CEC592C-07A1-11D9-B15E-000D56BFE6EE
@@ -59,7 +61,8 @@ $com.Document.ActiveView.ExecuteShellCommand('cmd.exe',"C:\\","/c calc.exe","Min
 ### 0x07、通过CreateProcess伪造父进程（ParentSpoof_CreateProcess.cpp）
 **创建新进程时指定“父进程句柄”**
  Windows 8 及以上的 `CreateProcess` 支持通过 `PROC_THREAD_ATTRIBUTE_PARENT_PROCESS` 设置**任意父进程**，让新进程的“父进程”字段为指定进程（比如 `explorer.exe`），而不是你自己的进程。
- <img width="766" height="949" alt="image" src="https://github.com/user-attachments/assets/ce3203c4-a7fd-41ba-b8f4-26d0c4b36628" />
+ 
+ <img width="50%"  alt="image" src="https://github.com/user-attachments/assets/ce3203c4-a7fd-41ba-b8f4-26d0c4b36628" />
 
 ### 0x08、通过NtCreateUserProcess伪造父进程（ParentSpoof_NtCreateUserProcess.cpp）
 我们在使用`CreateProcess`创建进程的时候能通过设置特定的参数来达到欺骗的效果，在`NtCreateUserProcess`里面也同样能够做到
