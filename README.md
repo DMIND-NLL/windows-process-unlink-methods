@@ -1,5 +1,5 @@
 # windows-process-unlink-methods
-本项目为Windows平台下的进程创建与父进程伪造技术演示项目，专注于通过多种 COM 接口、WMI、MMC、属性伪造等方式创建子进程，从而打破传统的进程父子关系链，实现进程隐藏与安全软件绕过。
+本项目为Windows平台下的进程创建与父进程伪造技术演示项目，专注于通过多种 COM 接口、WMI、MMC、属性伪造等方式创建子进程，从而断开进程父子关系链，实现进程隐藏与安全软件绕过。
 
 ## 项目结构
 windows-process-unlink-methods/
